@@ -1,4 +1,5 @@
 const prompt = require("prompt-sync")();
-var num = parseFloat(prompt("Enter Number in inch that you want to convert in  feet"));
-var feet = num/12;//num = 42
-console.log(feet);//3.5
+var length = parseFloat(prompt("Enter Number length in feet"));//60 feet
+var width = parseFloat(prompt("Enter Number width in feet"));//40 feet
+var area = 3.28084*width*3.28084*length
+console.log("area in meter"+area);
